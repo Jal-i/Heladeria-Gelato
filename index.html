@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css"> 
+    <title>Gelato</title>
+</head>
+
+<body>
+
+
+    <nav class="navbar">
+        <h1 class="logo">Gelato</h1>
+        <ul class="nav-links">
+            <li><a href="#"></a>Novedades</li>
+            <li><a href="#"></a>Nosotros</li>
+            <li><a href="#"></a>Galeria</li>
+            <li class="ctn"><a href="#"></a>Contacto</li>
+        </ul>
+        <img src="/img/choose.png" alt="" class="menu-btn">
+    </nav> 
+
+
+    <header>
+        <div class="header-content">
+            <h1>Gelato</h1>
+        </div>
+    </header>
+
+
+    <section>
+        <div class="title">
+            <h1>Próximas novedades</h1>
+            <div class="line"></div>
+        </div>
+        <div class="news">
+            <div class="card">
+                <div class="card-image img-1"></div>
+                <h2>Sabores aptos</h2>
+                <p>Nueva línea de productos aptos para personas con alergias e intolerancia a ciertos alimentos.</p>
+            </div>
+            
+            <div class="card">
+                <div class="card-image img-2"></div>
+                <h2>Nuevas paletas heladas</h2>
+                <p>Vení a disfrutar de nuestros nuevos sabores que son simplemente <br> I-RRE-SIS-TI-BLES.</p>
+            </div>
+            
+            <div class="card">
+                <div class="card-image img-3"></div>
+                <h2>Sabores frutales</h2>
+                <p>Lanzamos las nuevas paletas rellenas con los mas ricos sabores y cubiertas por tres capas de chocolate. <br> NO DEJES DE PROBARLAS!!!</p>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="about">
+        <div class="about-content">
+            <div class="title">
+                <h1 class="title">Sobre nosotros</h1>
+                <div class="line"></div>
+            </div>
+            <p>Somos un negocio familiar donde nos dedicamos a la elaboración artesanal y a la venta de productos de heladería. La variedad y calidad de nuestros productos han sido factores inalterables a través de los años. Asimismo, la atención personalizada que ofrecemos son elementos relevantes para todos nuestros clientes.</p>
+        </div>
+    </section>
+
+
+    <section class="gallery">
+        <img src="/img/img-1.jpg"  class="gallery-img" alt="">
+        <img src="/img/img-2.jpg"  class="gallery-img" alt="">
+        <img src="/img/img-3.jpg"  class="gallery-img" alt="">
+        <img src= "/img/img-4.jpg" class="gallery-img" alt="">
+        <img src="/img/img-5.jpg"  class="gallery-img" alt="">
+        <img src="/img/img-6.jpg"  class="gallery-img" alt="">
+    </section>
+
+
+    <div class="form-content">
+        <form class="formulario">
+            <div class="input">
+                <i class="fa-solid fa-users icon"></i>
+                <input type="text" placeholder="Nombre Completo">
+            </div>
+
+            <div class="input">
+                <i class="fa-solid fa-envelope icon"></i>
+                <input type="text" placeholder="Correo Eléctronico">
+            </div>
+
+            <div class="input">
+                <i class="fa-solid fa-key icon"></i>
+                <input type="password" placeholder="Contraseña">
+            </div>
+
+            <div class="button">
+                <input class="form-button" type="submit" value="registrate">
+            </div>
+            <p>Al registrarte, aceptas nuestras condiciones de uso y política de privacidad.</p>
+            <p>¿Ya tienes una cuenta? <a class="link"  href="login.html">Iniciar sesión</a></p>
+        </form>
+    </div>
+
+
+    <footer>
+        <div class="footer-content">
+            <h3>Gelato</h3>
+            <ul class="socials">
+                <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
+                <li><a href=""><i class="fa-brands fa-whatsapp"></i></a></li>
+                <li><a href=""><i class="fa-solid fa-envelope"></i></a></li>
+                <li></li>
+            </ul>
+        </div>
+        
+        <div class="copyright-container">
+            <p>&copy;2023 Gelato</p> </span>
+        </div>
+    </footer>
+
+
+
+    <script>
+        const menuBtn = document.querySelector('.menu-btn')
+        const navlinks = document.querySelector('.nav-links')
+
+        menuBtn.addEventListener('click',()=>{ 
+            navlinks.classList.toggle('mobile-menu')
+        })
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+</body>
+</html>

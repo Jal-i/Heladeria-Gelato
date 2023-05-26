@@ -1,0 +1,154 @@
+/* --------------------- GENERALES ----------------------------- */
+
+:root {
+    --color2: #eaebed;
+    --color1: #162c38;
+    --color6:#88b9a4;
+    --color3:#9C3352;
+    --color4:#e9838c;
+    --color5: #50696D;
+    --natural:#f0c5d9;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.title h1 {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    padding-left: 30px;
+    padding-top: 30px;
+    text-align: center;
+    font-size: 5vmin;
+    color: var(--color3);
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+}
+
+.line {
+    width: 150px;
+    height: 4px;
+    margin-left: 60px;
+    background-color: var(--color4);
+    border-radius: 5px;
+}
+/* --------------------- FORM ----------------------------- */
+
+body {
+    background-image: url(/img/fondo03.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}  
+
+.form-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 50px;
+}
+
+.formulario {
+    width: 430px;
+    height: 320px;
+    padding-top: 30px;
+    display: inline;
+    justify-content: center;
+    background-color: var(--color1);
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 70%;
+    margin-top: 15px;
+    padding: 0 0 5px 15px;
+    background-color: var(--color2);
+    color: var(--color1);
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    outline: none;
+    border: 0;
+    border-radius: 5px;
+    border: 1px solid var(--color1);
+}
+
+.input {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+.icon {
+    font-size: 20px;
+    text-align: center;
+    color: var(--color6);
+    padding: 0 10px 0 10px;
+}
+
+.button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form-button {
+    width: 50%;
+    margin-top: 20px;
+    border: none;
+    background-color: var(--color6);
+    color: var(--color1);
+    font-family:'Bungee', cursive;
+    font-size: 3vmin;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    border-radius: 5px;
+    cursor: pointer;
+} 
+
+.form-button:hover {
+    background-color: var(--color5);
+}
+
+p {
+    text-align: center;
+    margin-top: 30px;
+    color: var(--color2);
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+}
+
+.link {
+    text-decoration: none;
+    color: var(--color4);
+    font-size: 15px;
+    font-weight: 600;
+    padding-left: 5px;
+}
+
+.link:hover {
+    color: var(--natural);
+}  
+
+
+@media only screen and (max-width:850px) {
+    body {
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    } 
+    .title h1 {
+        color: var(--color1);
+    }
+    .line {
+        background-color: var(--color3);
+    }
+}

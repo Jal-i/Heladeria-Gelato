@@ -1,0 +1,466 @@
+/* --------------------- GENERALES ----------------------------- */
+
+:root {
+    --dark-blue: #2e424d;
+    --color2: #eaebed;
+    --turquoise: #62cda3;
+    --color1: #162c38;
+    --color6:#88b9a4;
+    --color3:#9C3352;
+    --color4:#e9838c;
+    --color5: #50696D;
+    --natural:#f0c5d9;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    overflow-x: hidden;
+} 
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+.title h1 {
+    padding-top: 25px;
+    text-align: center;
+    font-size: 5vmin;
+    color: var(--color3);
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+}
+
+.line {
+    width: 150px;
+    height: 4px;
+    background-color: var(--color4);
+    margin: 10px auto;
+    border-radius: 5px;
+}
+
+/* --------------------- NAVBAR ----------------------------- */
+
+.navbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+    padding: 20px;
+    color: var(--color1);
+}
+
+.logo {
+    display: none;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    color: var(--color1);
+    font-family: 'Open Sans', sans-serif;
+    font-size: 3vmin;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.nav-links li {
+    margin: 0 30px;
+}
+
+.nav-links li:hover {
+    transform: scale(1.1);
+}
+/* --------------------- HEADER ----------------------------- */
+
+header {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(/img/fondo01.jpg);
+    background-position: bottom;
+    background-size: cover;
+}
+
+.header-content {
+    text-align: center;
+}
+
+.header-content h1 {
+    text-align: center;
+    font-family:'Bungee', cursive;
+    font-size: 10vmin;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    color: var(--color1);
+}
+
+.ctn {
+    padding: 8px 15px;
+    background-color: var(--color4);
+    border-radius: 30px;
+    color: var(--color1);
+}
+
+.menu-btn {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    width: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+/* --------------------- NEWS ----------------------------- */
+
+section {
+    width: 100%;
+    padding: 15px;
+}
+
+.news {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.card {
+    width: 300px;
+    height: 400px;
+    margin: 30px;
+    background-color: var(--color2);
+    border-radius: 15px;
+}
+
+.card-image {
+    height: 180px;
+    margin-bottom: 15px;
+    background-size: cover;
+    border-radius: 15px 15px 0 0;
+}
+
+
+.img-1 {
+    background-image: url(/img/sabores-aptos.jpg);
+}
+
+.img-2 {
+    background-image: url(/img/paletas-heladas.jpg);
+}
+
+.img-3 {
+    background-image: url(/img/sabores-frutales.jpg);
+}
+
+.card h2 {
+    text-align: center;
+    color: var(--color1);
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.card p {
+    padding: 10px;
+    color: var(--color1);
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+}
+
+.card:hover {
+    background-color: var(--natural);
+    transition: all 1s ease;
+    cursor: pointer;
+} 
+
+/* --------------------- ABOUT ----------------------------- */
+
+.about {
+    width: 100%;
+    height: 60vh;
+    background-color: var(--color2);
+}
+
+.about-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column; 
+}
+
+.about-content .line {
+    margin-bottom: 30px;
+}
+
+.about-content p {
+   color: var(--color1);
+   font-family: 'Open Sans', sans-serif;
+   font-size: 4vmin;
+   font-weight: 400;
+
+}
+
+/* --------------------- GALLERY ----------------------------- */
+
+.gallery{
+    display: flex;
+    justify-content: center;
+    flex-flow: wrap;
+}
+
+.gallery-img{
+    max-width: 350px;
+    height: 350px;
+    padding: 1rem;
+    object-fit: cover;
+}
+
+/* --------------------- FORM ----------------------------- */
+
+.form-content {
+    width: 100%;
+    height: 150vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(/img/fondo02.jpg);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+} 
+
+.formulario {
+    width: 450px;
+    height: 400px;
+    padding-top: 30px;
+    display: inline;
+    justify-content: center;
+    background-color: var(--color1);
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 70%;
+    margin-top: 15px;
+    padding: 0 0 5px 15px;
+    background-color: var(--color2);
+    color: var(--color1);
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    outline: none;
+    border: 0;
+    border-radius: 5px;
+    border: 1px solid var(--color1);
+}
+
+.input {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+.icon {
+    font-size: 20px;
+    text-align: center;
+    color: var(--color6);
+    padding: 0 10px 0 10px;
+}
+
+.button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form-button {
+    width: 50%;
+    margin-top: 15px;
+    border: none;
+    background-color: var(--color6);
+    color: var(--color1);
+    font-family:'Bungee', cursive;
+    font-size: 3vmin;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    border-radius: 5px;
+    cursor: pointer;
+} 
+
+.form-button:hover {
+    background-color: var(--color5);
+}
+
+p {
+    text-align: center;
+    margin-top: 15px;
+    padding: 0 15px;
+    color: var(--color2);
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+}
+
+.link {
+    text-decoration: none;
+    color: var(--color4);
+    font-size: 15px;
+    font-weight: 600;
+    padding-left: 5px;
+}
+
+.link:hover {
+    color: var(--turquoise);
+}  
+
+/* --------------------- FOOTER----------------------------- */
+
+footer {
+    height: auto;
+    width: 100%;
+    padding-top: 40px;
+    background-color: var(--color2);
+    color: var(--color3);
+}
+
+.footer-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.footer-content h3 {
+    text-align: center;
+    font-family:'Bungee', cursive;
+    font-size: 4vmin;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    color: var(--color1);
+}
+
+.socials {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-left: 30px;
+}
+
+.socials li {
+    margin: 20px;
+}
+
+.socials a {
+    color: var(--color3);
+    font-size: 30px;
+    transition: color .2s ease;
+}
+
+.socials a:hover {
+    color: var(--color4);
+}
+
+.copyright-container {
+    background-color: var(--color5);
+    padding: 10px 0;
+    text-align: center;
+}
+
+.copyright-container p {
+    color: var(--color1);
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 3vmin;
+}
+
+
+
+
+
+
+
+
+
+/* --------------------- MOBILE ----------------------------- */
+
+@media only screen and (max-width:850px) {
+    .menu-btn {
+        display: block;
+    } 
+    .navbar {
+        padding: 0;
+    }
+    .logo {
+        display: block;
+        position: absolute;
+        top: 30px;
+        left: 30px;
+        color: var(--color1);
+        font-family:'Bungee', cursive;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+    }
+    .nav-links {
+        flex-direction: column;
+        width: 100%;
+        height: 100vh;
+        justify-content: center;
+        background-color: var(--color3);
+        margin-top: -900px;
+        transition: all 0.5s ease;
+    }
+    .mobile-menu {
+        margin-top: 0px;
+        border-bottom-right-radius: 30%;
+    }
+    .nav-links li {
+        margin: 30px auto;
+    }
+    .header-content {
+        display: none;
+    }
+    section {
+        width: 100%;
+    }
+    .news {
+        flex-direction: column;
+    }
+    .about {
+        height: 60vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .about p {
+        padding: 0 15px 20px 15px;
+        font-size: 4vmin;
+    } 
+    .gallery {
+        height: 100%;
+        padding: 20px;
+    }
+    .formulario {
+        width: 350px;
+        height: 450px;
+    }
+    
+}
